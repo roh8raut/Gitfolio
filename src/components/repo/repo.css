@@ -1,0 +1,19 @@
+.repo__card { 
+    background-color: #101111;
+    width: 360px;
+    border-radius: 5px;
+    align-self: center;
+    padding-left: 20px;
+    margin: 10px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.repo__card:hover {
+    transform: scale(1.1);
+    /* box-shadow: 1px 1px 5px; */
+}
+
+.section-footer {
+    padding: 7px;
+}

@@ -1,0 +1,14 @@
+.work {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+}
+
+.repo-container {
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: space-between;
+    padding: 0 40px;
+}

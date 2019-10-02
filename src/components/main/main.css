@@ -1,0 +1,18 @@
+.main-container {
+    display: flex;
+}
+
+.main-container .profile-container {
+    flex: 1.5;
+    height: auto;
+}
+
+.main-container .repos-container {
+    flex: 3
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}

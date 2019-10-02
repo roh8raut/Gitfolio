@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b798fd87.chunk.css",
-    "main.js": "/static/js/main.a725030a.chunk.js",
-    "main.js.map": "/static/js/main.a725030a.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.7302273d.js",
-    "runtime~main.js.map": "/static/js/runtime~main.7302273d.js.map",
-    "static/js/2.3da0914a.chunk.js": "/static/js/2.3da0914a.chunk.js",
-    "static/js/2.3da0914a.chunk.js.map": "/static/js/2.3da0914a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2c65d958f4eea356ff90a80420f2a61a.js": "/precache-manifest.2c65d958f4eea356ff90a80420f2a61a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.b798fd87.chunk.css.map": "/static/css/main.b798fd87.chunk.css.map"
+    "main.css": "/Gitfolio/static/css/main.b798fd87.chunk.css",
+    "main.js": "/Gitfolio/static/js/main.55d6d0ee.chunk.js",
+    "main.js.map": "/Gitfolio/static/js/main.55d6d0ee.chunk.js.map",
+    "runtime~main.js": "/Gitfolio/static/js/runtime~main.fcd21976.js",
+    "runtime~main.js.map": "/Gitfolio/static/js/runtime~main.fcd21976.js.map",
+    "static/js/2.3da0914a.chunk.js": "/Gitfolio/static/js/2.3da0914a.chunk.js",
+    "static/js/2.3da0914a.chunk.js.map": "/Gitfolio/static/js/2.3da0914a.chunk.js.map",
+    "index.html": "/Gitfolio/index.html",
+    "precache-manifest.85cfb5e72710775e97d432fc51774899.js": "/Gitfolio/precache-manifest.85cfb5e72710775e97d432fc51774899.js",
+    "service-worker.js": "/Gitfolio/service-worker.js",
+    "static/css/main.b798fd87.chunk.css.map": "/Gitfolio/static/css/main.b798fd87.chunk.css.map"
   }
 }

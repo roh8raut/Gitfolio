@@ -1,33 +1,31 @@
 import React from 'react';
 import './repo.css';
+import Placeholder from '../placeholder/placeholder';
+
 
 const Repo = (props) =>  {
     const handleClick = () => {
         window.open(props.repoObj.url);
     }
-    
-    if(props.repoObj){
+    // console.log("repoObj,", props.repoObj)
+    const repoObj = props.repoObj;
         
         return (                                 
                <div className="repo__card" onClick={handleClick}>
-                   <h2>{props.repoObj.name}</h2>
-                   <p>{props.repoObj.desc}</p>
-                   <div className="section-footer">
-                        <i className="fa fa-code" aria-hidden="true"></i>
-                        <span style={{marginLeft: 5+"px"}}>{props.repoObj.language}</span>
-                   </div>
+                    <h2>{(repoObj && repoObj.name) || <Placeholder width="150"/>}</h2>
+                    <div>{(repoObj && repoObj.desc) || <Placeholder width="300"/>}</div>
+                    <div className="section-footer">
+                        {
+                            (repoObj && repoObj.language) ? 
+                            <>
+                                <i className="fa fa-code" aria-hidden="true"></i>
+                                <span style={{marginLeft: 5+"px"}}>{repoObj.language}</span> 
+                            </> :
+                            <Placeholder width="100"/>
+                        }
+                    </div>
                </div>
         )
-    } else {
-        return (
-            <div className="repo__card" style={{height: 127+"px"}}>
-                <h2 className="holder" style={{width: 100+"px"}}></h2>
-                <p className="holder" style={{width: 280+"px"}}></p>
-                <div className="holder" style={{width: 80+"px"}}></div>
-            </div>
-        )
-    }
-   
 }
 
 export default Repo;

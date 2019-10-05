@@ -1,10 +1,12 @@
 import React from 'react';
 import './profile.css';
+import Placeholder from '../placeholder/placeholder';
+
 
 const Profile = (props) =>  {
   
     const userObj = props.userObj;
-    if(userObj){
+    // if(userObj){
         
     return (
         <div className="profile-container">
@@ -13,7 +15,7 @@ const Profile = (props) =>  {
                     <img src={userObj.avatar_url} alt="avatar" onLoad={(e) => e.target.style.display = "block"}/>
                 </div>
                 <div className="content__name">
-                    <span>{userObj.login}</span>                                      
+                    <span>{(userObj&&userObj.login) || <Placeholder width="100"/>}</span>                                  
                 </div>
                 <div className="content__link">
                     <a href="https://github.com/roh8raut">@rohit_raut</a>
@@ -38,9 +40,9 @@ const Profile = (props) =>  {
             </div>
         </div>
     )
-     } else {
-        return (<p>Loading....</p>)
-    }
+    //  } else {
+    //     return (<p>Loading....</p>)
+    // }
 }
 
 export default Profile;

@@ -13,7 +13,7 @@ const Repo = (props) =>  {
         return (                                 
                <div className="repo__card" onClick={handleClick}>
                     <h2>{(repoObj && repoObj.name) || <Placeholder width="150"/>}</h2>
-                    <div>{(repoObj && repoObj.desc) || <Placeholder width="300"/>}</div>
+                    <div>{(repoObj && repoObj.desc) || <Placeholder width="350"/>}</div>
                     <div className="section-footer">
                         {
                             (repoObj && repoObj.language) ? 

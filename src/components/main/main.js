@@ -35,7 +35,7 @@ const Main = (props) =>  {
                     throw new Error('Something went wrong');
                 }
             })
-            .then((datas) => {
+            .then((datas) => {               
                 setRepoDetails(datas)
                 setIsLoaded(true);
             })
@@ -44,15 +44,15 @@ const Main = (props) =>  {
                 setIsLoaded(true);
             })
                     
-    }, [setUserDetails]);
+    }, []);
 
    
     const finalRepoObj = repoDetails.map((repo) => {
-        let desc = "";
-        if(repo.description !== null) {
-            desc = repo.description.split(":").pop();
-        }
-            return {name: repo.name, desc: desc, url: repo.html_url,language: repo.language, id: repo.id}
+        // let desc = "";
+        // if(repo.description !== null) {
+        //     desc = repo.description.split(":").pop();
+        // }
+            return {name: repo.name, desc: repo.description, url: repo.html_url,language: repo.language, id: repo.id, fork: repo.fork}
     })
     
     return (

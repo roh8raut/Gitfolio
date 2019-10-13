@@ -4,7 +4,6 @@ import Repo from '../repo/repo';
 
 const Repos = (props) =>  {
    const {repoObj, isLoaded} = props;
-
    if(isLoaded && repoObj) {
        
     return (
@@ -14,15 +13,30 @@ const Repos = (props) =>  {
                 <div className="repo-container">
                     {
                         repoObj.map((obj) => {
-                            return <Repo key={obj.id} repoObj={obj}/>  
+                            if(!obj.fork){
+                                return <Repo key={obj.id} repoObj={obj}/>  
+                            }
+                            
                         })
                     }                                     
-                </div>                
+                </div>
+                
+                <h1 className="fork">Fork.</h1>
+                <div className="repo-container">
+                    {
+                        repoObj.map((obj) => {
+                            if(obj.fork){
+                                return <Repo key={obj.id} repoObj={obj}/>  
+                            }                            
+                        }) 
+                    }                                     
+                </div>
             </div>
 
         </>
     )
-    } else {
+    } 
+    else {
         var repoHolder = [];
         for(let i = 0; i < 8; i++) {
             repoHolder.push(<Repo key={i}/>)

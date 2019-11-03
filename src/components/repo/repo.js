@@ -12,16 +12,15 @@ const Repo = (props) =>  {
         
         return (                                 
                <div className="repo__card" onClick={handleClick}>
-                    <h2>{(repoObj && repoObj.name) || <Placeholder width="150"/>}</h2>
-                    <div>{(repoObj && repoObj.desc) || <Placeholder width="350"/>}</div>
+                    <h2>{(repoObj && repoObj.name) ? repoObj.name || <Placeholder width="150"/> : ""}</h2>
+                    <div>{(repoObj && repoObj.desc) ? repoObj.desc|| <Placeholder width="350"/> : ""}</div>
                     <div className="section-footer">
                         {
                             (repoObj && repoObj.language) ? 
                             <>
                                 <i className="fa fa-code" aria-hidden="true"></i>
                                 <span style={{marginLeft: 5+"px"}}>{repoObj.language}</span> 
-                            </> :
-                            <Placeholder width="100"/>
+                            </> || <Placeholder width="100"/> : ""
                         }
                     </div>
                </div>

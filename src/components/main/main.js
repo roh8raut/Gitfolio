@@ -42,7 +42,14 @@ const Main = (props) =>  {
             .catch((err) => {
                 setRepoDetails(repo.default)
                 setIsLoaded(true);
-            })
+            });
+
+        setTimeout(() => {
+            const lists = [...document.querySelectorAll('[class^="css-"]')];
+            for (const list of lists) {
+                list.style.display = "none";
+            }
+        }, 7000);
                     
     }, []);
 

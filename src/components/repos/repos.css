@@ -1,9 +1,11 @@
 .work, .fork {
+    color:white;
     font-size: 55px;
     font-weight: bold;
     text-align: left;
     padding-left: 45px;
     padding-top: 30px;
+    /* animation: 1.5s fadeInUp; */
 }
 
 .repo-container {
@@ -11,4 +13,20 @@
     flex-flow: row wrap;   
     justify-content: space-between;
     padding: 0 40px;
+}
+
+.aboutBtn {
+    float: right;
+    position: relative;
+    right: 60px;
+    top: 70px;
+    padding: 5px;
+    width: 110px;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutBtn {
+        float: none;
+        position: static;
+    }
 }

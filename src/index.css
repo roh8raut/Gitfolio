@@ -12,8 +12,8 @@ body {
   font-family: 'Questrial', sans-serif;
   -webkit-font-smoothing: antialia<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">sed;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  /* background-size: 100% 80%; */
 }
 
 code {
@@ -24,4 +24,10 @@ code {
 .holder {
   background-color: grey;
   height: 20px;
+}
+
+button:focus {outline:0;}
+
+button:hover {
+  cursor: pointer
 }

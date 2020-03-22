@@ -1,6 +1,7 @@
 import React from 'react';
 import './repos.css';
 import Repo from '../repo/repo';
+import {Link} from 'react-router-dom';
 
 const Repos = (props) =>  {
    const {repoObj, isLoaded} = props;
@@ -9,8 +10,9 @@ const Repos = (props) =>  {
     return (
         <>                       
             <div className="repos-container">
+                <Link to="/"><div style={{textAlign: "center"}}><button className="btn aboutBtn">About</button></div></Link>
                 <h1 className="work">Work.</h1>
-                <div className="repo-container">
+                <div className="repo-container" data-aos="fade-up" data-aos-duration="1200">
                     {
                         repoObj.map((obj) => {
                             if(!obj.fork){

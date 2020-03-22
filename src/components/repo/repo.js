@@ -11,7 +11,7 @@ const Repo = (props) =>  {
     const repoObj = props.repoObj;
         
         return (                                 
-               <div className="repo__card" onClick={handleClick}>
+               <div className="repo__card" data-aos="fade-up" onClick={handleClick}>
                      <h2>{(repoObj && repoObj.name) || <Placeholder width="150"/>}</h2>
                     <div>{(repoObj && repoObj.desc) || <Placeholder width="350"/>}</div>
                     <div className="section-footer">

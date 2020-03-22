@@ -66,7 +66,7 @@ const Main = (props) =>  {
         <>
         <Router>
             <Switch>
-                <Route exact path="/"><AboutMe /></Route>
+                <Route path="/"><AboutMe /></Route>
                 <Route path="/repo">
                     <div className="main-container">
                         <Profile userObj={userDetails}/>

@@ -65,15 +65,13 @@ const Main = (props) =>  {
     return (
         <>
         <Router>
-            <Switch>
-                <Route path="/"><AboutMe /></Route>
-                <Route path="/repo">
+                <Route exact path="/Gitfolio"><AboutMe /></Route>
+                <Route path="/Gitfolio/repo">
                     <div className="main-container">
                         <Profile userObj={userDetails}/>
                         <Repos repoObj={finalRepoObj} isLoaded={isLoaded}/>
                     </div> 
                 </Route>
-            </Switch>
         </Router>
         </>
     )

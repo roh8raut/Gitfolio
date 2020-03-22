@@ -10,7 +10,7 @@ const Repos = (props) =>  {
     return (
         <>                       
             <div className="repos-container">
-                <Link to="/"><div style={{textAlign: "center"}}><button className="btn aboutBtn">About</button></div></Link>
+                <Link to="/Gitfolio"><div style={{textAlign: "center"}}><button className="btn aboutBtn">About</button></div></Link>
                 <h1 className="work">Work.</h1>
                 <div className="repo-container" data-aos="fade-up" data-aos-duration="1200">
                     {

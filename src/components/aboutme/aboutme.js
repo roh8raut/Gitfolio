@@ -17,7 +17,7 @@ const AboutMe = () => {
                     I look forward to connect with like minded people, Learn from them and use technology to solve real life problems
                 </span>
             </p>
-            <Link to="/repo"><div className="repoBtnBlock shake"><button className="btn repoBtn"><span>See my work!!</span></button></div></Link>
+            <Link to="/Gitfolio/repo"><div className="repoBtnBlock shake"><button className="btn repoBtn"><span>See my work!!</span></button></div></Link>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './repo.css';
 import Placeholder from '../placeholder/placeholder';
+import codeIcon from '../../assets/icons/code.svg';
 
 
 const Repo = (props) =>  {
@@ -18,7 +19,8 @@ const Repo = (props) =>  {
                         {
                             (repoObj && repoObj.language) ? 
                             <>
-                                <i className="fa fa-code" aria-hidden="true"></i>
+                                {/* <i className="fa fa-code" aria-hidden="true"></i> */}
+                                <img src={codeIcon} alt="code-icon"  className="width__1" />
                                 <span style={{marginLeft: 5+"px"}}>{repoObj.language}</span> 
                                 </> :
                             <Placeholder width="100"/>

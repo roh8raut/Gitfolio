@@ -12,9 +12,18 @@
     flex: 3
 }
 
+.width__1 {
+    width: 1rem;
+}
+
+.width__2 {
+    width: 2rem;
+}
+
 @media only screen and (max-width: 768px) {
     .main-container {
         flex-direction: column;
+        margin-top: 6rem;
     }
 }
 /* translate(61px,-100px); */

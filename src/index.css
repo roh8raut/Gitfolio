@@ -1,15 +1,11 @@
 @font-face {
-    font-family: 'Questrial';
-    src:url(https://fonts.gstatic.com/s/questrial/v9/QdVUSTchPBm7nuUeVf70viFluW44JQ.woff2) format('woff2');
-    font-display: swap;
+  font-family: 'Jost';
+  src:  url('../src/assets/reg.woff') format('woff2'),
+        url('../src/assets/reg.woff') format('woff');
 }
-
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Jost', Fallback, sans-serif;
   -webkit-font-smoothing: antialia<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">sed;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000;
@@ -30,4 +26,12 @@ button:focus {outline:0;}
 
 button:hover {
   cursor: pointer
+}
+
+.hide {
+  display:none !important;
+}
+
+.position--fixed {
+  position: fixed;
 }

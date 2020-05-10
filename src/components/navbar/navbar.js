@@ -25,7 +25,7 @@ function Navbar() {
                 {/* <span onClick={clickHandler}><Link to="/Gitfolio/contact">Contact Me</Link></span> */}
                 {isMobile && <p className="content__addinfo--social" data-aos="fade-up">
                     <a href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2"/></a>
-                    <a href="https://in.linkedin.com/in/rohitraut1996"><img src={linkedinIcon} className="width__2" alt="linkedin icon"/></a>
+                    <a href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon"/></a>
                 </p>}
             </div>
         </div>

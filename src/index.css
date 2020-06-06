@@ -35,3 +35,10 @@ button:hover {
 .position--fixed {
   position: fixed;
 }
+
+.error {
+  color: red;
+}
+.error-border {
+  border: solid 1px red;
+}

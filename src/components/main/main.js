@@ -15,6 +15,7 @@ import 'aos/dist/aos.css';
 import Navbar from '../navbar/navbar';
 // import Contact from '../contact me/contact';
 import ScrollToTop from '../../utility/scrolltotop';
+import Contact from '../contact me/contact';
 
 const Main = (props) =>  {
     const [userDetails, setUserDetails] = useState([]);
@@ -83,7 +84,7 @@ const Main = (props) =>  {
                     <Repos repoObj={finalRepoObj} isLoaded={isLoaded}/>
                 </div> 
             </Route>
-            {/* <Route exact path="/Gitfolio/contact"><Contact/></Route> */}
+            <Route exact path="/Gitfolio/contact"><Contact/></Route>
         </Router>
         </>
     )

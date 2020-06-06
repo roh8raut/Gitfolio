@@ -1,0 +1,33 @@
+.contact-form {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/w4.svg') no-repeat;
+    background-position-y: bottom; 
+}
+
+.contact-form div {
+    padding-bottom: 40px;
+    width: 50%;
+}
+
+.contact-form div * {
+    width: 100%;
+}
+
+.contact-form .error {
+    font-size: small;
+    position: absolute;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .contact-form {
+        height: 100vh;
+    }
+    .contact-form div {
+        width: 30%;
+    }
+}

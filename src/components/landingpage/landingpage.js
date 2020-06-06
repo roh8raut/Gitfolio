@@ -3,7 +3,7 @@ import './landingpage.css';
 
 import Coding from '../../assets/coding.svg';
 import N from '../../assets/drawing.svg';
-import Button from '../buttons/buttons';
+import Button from '../common/buttons/buttons';
 import { Link } from 'react-router-dom';
 
 const Landingpage = () => {
@@ -30,7 +30,7 @@ const Landingpage = () => {
                 </div>
                 <h1 className="ques" data-aos="fade-down-right">Interested in doing project a project together ?</h1>
                 <div style={{justifySelf: "center", padding: "1em"}}>
-                    <Link to="/Gitfolio/repo"><Button color="deeppink" text="Portfolio" classes="box__shadow--pink"/></Link>
+                    <Link to="/Gitfolio/contact"><Button color="deeppink" text="Contact Me" classes="box__shadow--pink"/></Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,13 @@
+.input-text, textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    background-color: black;
+    color: yellowgreen;
+    font-size: large;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

@@ -1,3 +1,12 @@
+.response {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
 .contact-form {
     display: flex;
     height: 90vh;
@@ -13,7 +22,7 @@
     width: 50%;
 }
 
-.contact-form div * {
+.contact-form div *:not(span) {
     width: 100%;
 }
 
@@ -24,6 +33,10 @@
 
 
 @media only screen and (min-width: 768px) {
+    .response {
+        padding-left: 160px;
+        width: 80%;
+    }
     .contact-form {
         height: 100vh;
     }

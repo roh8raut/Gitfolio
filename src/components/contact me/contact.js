@@ -8,6 +8,8 @@ import './contact.css';
 
 const Contact = () => {
     const [isLoading, setIsloading] = useState(false);
+    const [response, setResponse] = useState("");
+
     const nameObj = useValidation();
     const emailObj = useValidation();
     const messageObj = useValidation();
@@ -45,10 +47,12 @@ const Contact = () => {
                 res.json();
             }).then((data) => {
                 setIsloading(false);
+                setResponse("Success");
                 console.log(data)
             })
             .catch((e) => {
                 setIsloading(false);
+                setResponse("Failure");
                 console.log(e);
             })
       }
@@ -64,31 +68,28 @@ const Contact = () => {
     }
 
     return (
+        
+        (response === "Success") ? <div className="response"><h1>Thanks!! For connecting to me will get in touch soon.😉</h1></div> :
+        (response === "Failure") ? <div  className="response"><h1>Ooops Something went wrong please check your internet connectivity or try again after some time.☹</h1></div> :
+
         <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
             <div>
-                {/* <label>Name: */}
-                    <Input name="Name" handler={nameObj.nameHandler}/><br/>
-                    {nameObj.error && <span className="error">{nameObj.error}</span>}
-                {/* </label> */}
+                <Input name="Name" handler={nameObj.nameHandler}/><br/>
+                {nameObj.error && <span className="error">{nameObj.error}</span>}
             </div>
             <div>
-                {/* <label>Email: */}
                 <Input name="Email" handler={emailObj.emailHandler} /><br/>
-                    {emailObj.error && <span className="error">{emailObj.error}</span>}
-                {/* </label> */}
+                {emailObj.error && <span className="error">{emailObj.error}</span>}
             </div>
             <div>
-                {/* <label>Essay: */}
-                    <textarea name="Message" placeholder="Message" onChange={(e) => messageObj.messageHandler(e.target)} /><br/>
-                    {messageObj.error && <span className="error">{messageObj.error}</span>}
-                {/* </label> */}
+                <textarea name="Message" placeholder="Message" onChange={(e) => messageObj.messageHandler(e.target)} /><br/>
+                {messageObj.error && <span className="error">{messageObj.error}</span>}
             </div>
             <div>
                 <Button type="submit" text={isLoading ? "Loading..." : "Submit"} disabled={isLoading ? 'disabled' : ""}/>
             </div>
       </form>
-        
-    )
+    );
 }
 
 export default Contact;

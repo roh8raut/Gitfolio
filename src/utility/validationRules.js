@@ -1,9 +1,9 @@
-const emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-const nameRegex =  /[a-zA-Z]+/g;
+const emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z\-\.]{3,10})\.([a-zA-Z]{2,5})$/;
+const nameRegex =  /[a-zA-Z]/;
 
 const validationRules = {
     required: {
-      test: val => val.length > 5,
+      test: val => nameRegex.test(val),
       message: name => `Please enter a valid Full ${name}.`,
     },
     email: {

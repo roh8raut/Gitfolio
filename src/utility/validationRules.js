@@ -3,7 +3,7 @@ const nameRegex =  /[a-zA-Z]+/g;
 
 const validationRules = {
     required: {
-      test: val => nameRegex.test(val),
+      test: val => val.length > 5,
       message: name => `Please enter a valid Full ${name}.`,
     },
     email: {

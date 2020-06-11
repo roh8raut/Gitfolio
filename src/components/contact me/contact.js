@@ -26,36 +26,39 @@ const Contact = () => {
         return false;
     }
     const handleSubmit = (e) => {
-      if (e) {
-        e.preventDefault();
-      }
-     
-      if (isvalidForm()) {
-            console.log("form vAlid");
-            setIsloading(true);
-            const request = getObjRequest();
-            const url = `https://gmail-service.herokuapp.com/sendmessage`;
-            fetch(url, {
-                method: 'POST',
-                headers: {
-                  'Accept': 'application/json',
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(request)
-            })
-            .then((res) => {
-                res.json();
-            }).then((data) => {
-                setIsloading(false);
-                setResponse("Success");
-                console.log(data)
-            })
-            .catch((e) => {
-                setIsloading(false);
-                setResponse("Failure");
-                console.log(e);
-            })
-      }
+        const btnElement = e.target.querySelector("button");
+
+        if (e) {
+            e.preventDefault();
+        }
+
+        if (isvalidForm()) {
+                setIsloading(true);
+                const request = getObjRequest();
+                const url = `https://gmail-service.herokuapp.com/sendmessage`;
+
+                setTimeout(() => {
+                    btnElement.innerText = "About to Finish.."
+                }, 5000);
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(request)
+                })
+                .then((res) => {
+                    res.json();
+                }).then((data) => {
+                    setIsloading(false);
+                    setResponse("Success");
+                })
+                .catch((e) => {
+                    setIsloading(false);
+                    setResponse("Failure");
+                })
+        }
 
     }
 

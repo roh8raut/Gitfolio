@@ -39,7 +39,7 @@ const Contact = () => {
 
                 setTimeout(() => {
                     btnElement.innerText = "About to Finish.."
-                }, 5000);
+                }, 3000);
                 fetch(url, {
                     method: 'POST',
                     headers: {

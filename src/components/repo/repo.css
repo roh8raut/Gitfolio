@@ -8,6 +8,8 @@
     text-align: left;
     transition: transform 0.2s ease-in-out;
     color:white;
+    background: linear-gradient(90deg, rgba(29,29,29,1) 2%, rgba(173,173,176,1) 95%);
+    /* background: linear-gradient(90deg, rgba(15,13,60,1) 6%, rgba(206,206,233,1) 96%); */
 }
 
 .repo__card:hover {

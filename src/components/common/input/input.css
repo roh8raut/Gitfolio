@@ -6,6 +6,7 @@
     background-color: black;
     color: yellowgreen;
     font-size: large;
+    font-family: inherit;
 }
 
 textarea:focus, input:focus{

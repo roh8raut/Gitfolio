@@ -20,3 +20,20 @@
 .section-footer {
     padding: 7px 7px 7px 0;
 }
+
+span.language {
+    margin-left: 5px;
+    color: greenyellow;
+    text-shadow: 1px 1px black;
+}
+
+strong.prototype {
+    cursor: pointer;
+    float: right;
+    color: navy;
+    text-shadow: 2px 2px deepskyblue;
+}
+
+div.desc {
+    text-shadow: 0.5px 0.5px darkgray
+}

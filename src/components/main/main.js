@@ -68,7 +68,7 @@ const Main = (props) =>  {
 
 
     const finalRepoObj = repoDetails.map((repo) => {
-        return {name: repo.name, desc: repo.description, url: repo.html_url,language: repo.language, id: repo.id, fork: repo.fork}
+        return {name: repo.name, desc: repo.description, url: repo.html_url,language: repo.language, id: repo.id, fork: repo.fork, homePage: repo.homepage}
     })
 
     return (

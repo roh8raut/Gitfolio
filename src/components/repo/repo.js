@@ -25,7 +25,7 @@ const Repo = (props) =>  {
                             <>
                                 <img src={codeIcon} alt="code-icon"  className="width__1" />
                                 <span className="language">{repoObj.language}</span>
-                                {repoObj.homePage ? <strong className="Prototype" onClick={handlePrototypeClick}>Prototype</strong> : ""}
+                                {repoObj.homePage ? <strong className="prototype" onClick={handlePrototypeClick}>Prototype</strong> : ""}
                             </> :
                             <Placeholder width="100"/>
                         }

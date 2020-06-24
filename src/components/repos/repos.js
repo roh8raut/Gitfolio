@@ -15,7 +15,7 @@ const Repos = (props) =>  {
                 <div className="repo-container">
                     {
                         repoObj.map((obj) => {
-                            if(!obj.fork) {
+                            if(!obj.fork && !(obj.name.indexOf("roh8raut.github.io") > -1)) {
                                 return <Repo key={obj.id} repoObj={obj}/>  
                             }
                             return "";

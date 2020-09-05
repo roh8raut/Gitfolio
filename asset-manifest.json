@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Gitfolio/static/css/main.ce7bfab1.chunk.css",
-    "main.js": "/Gitfolio/static/js/main.a8b11dec.chunk.js",
-    "main.js.map": "/Gitfolio/static/js/main.a8b11dec.chunk.js.map",
+    "main.js": "/Gitfolio/static/js/main.11283cb1.chunk.js",
+    "main.js.map": "/Gitfolio/static/js/main.11283cb1.chunk.js.map",
     "runtime-main.js": "/Gitfolio/static/js/runtime-main.5d834a90.js",
     "runtime-main.js.map": "/Gitfolio/static/js/runtime-main.5d834a90.js.map",
     "static/css/2.eb43dee1.chunk.css": "/Gitfolio/static/css/2.eb43dee1.chunk.css",
     "static/js/2.69507aca.chunk.js": "/Gitfolio/static/js/2.69507aca.chunk.js",
     "static/js/2.69507aca.chunk.js.map": "/Gitfolio/static/js/2.69507aca.chunk.js.map",
     "index.html": "/Gitfolio/index.html",
-    "precache-manifest.7f0e58ded5a9cf9ee97f8b109f77a1f3.js": "/Gitfolio/precache-manifest.7f0e58ded5a9cf9ee97f8b109f77a1f3.js",
+    "precache-manifest.0b2e6db6ebb19db87fee47f73c2345d5.js": "/Gitfolio/precache-manifest.0b2e6db6ebb19db87fee47f73c2345d5.js",
     "service-worker.js": "/Gitfolio/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/Gitfolio/static/css/2.eb43dee1.chunk.css.map",
     "static/css/main.ce7bfab1.chunk.css.map": "/Gitfolio/static/css/main.ce7bfab1.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.eb43dee1.chunk.css",
     "static/js/2.69507aca.chunk.js",
     "static/css/main.ce7bfab1.chunk.css",
-    "static/js/main.a8b11dec.chunk.js"
+    "static/js/main.11283cb1.chunk.js"
   ]
 }

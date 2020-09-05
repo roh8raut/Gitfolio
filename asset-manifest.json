@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Gitfolio/static/css/main.ce7bfab1.chunk.css",
-    "main.js": "/Gitfolio/static/js/main.9451fb71.chunk.js",
-    "main.js.map": "/Gitfolio/static/js/main.9451fb71.chunk.js.map",
+    "main.css": "/Gitfolio/static/css/main.3b3c9588.chunk.css",
+    "main.js": "/Gitfolio/static/js/main.f48b0e07.chunk.js",
+    "main.js.map": "/Gitfolio/static/js/main.f48b0e07.chunk.js.map",
     "runtime-main.js": "/Gitfolio/static/js/runtime-main.5d834a90.js",
     "runtime-main.js.map": "/Gitfolio/static/js/runtime-main.5d834a90.js.map",
     "static/css/2.eb43dee1.chunk.css": "/Gitfolio/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.69507aca.chunk.js": "/Gitfolio/static/js/2.69507aca.chunk.js",
-    "static/js/2.69507aca.chunk.js.map": "/Gitfolio/static/js/2.69507aca.chunk.js.map",
+    "static/js/2.6d248f7e.chunk.js": "/Gitfolio/static/js/2.6d248f7e.chunk.js",
+    "static/js/2.6d248f7e.chunk.js.map": "/Gitfolio/static/js/2.6d248f7e.chunk.js.map",
     "index.html": "/Gitfolio/index.html",
-    "precache-manifest.a91ad6078b674f19087350b04bac7bd5.js": "/Gitfolio/precache-manifest.a91ad6078b674f19087350b04bac7bd5.js",
+    "precache-manifest.dae3ebf0ffd9a89c2f6ff42effc7afb0.js": "/Gitfolio/precache-manifest.dae3ebf0ffd9a89c2f6ff42effc7afb0.js",
     "service-worker.js": "/Gitfolio/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/Gitfolio/static/css/2.eb43dee1.chunk.css.map",
-    "static/css/main.ce7bfab1.chunk.css.map": "/Gitfolio/static/css/main.ce7bfab1.chunk.css.map",
-    "static/js/2.69507aca.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.69507aca.chunk.js.LICENSE.txt",
+    "static/css/main.3b3c9588.chunk.css.map": "/Gitfolio/static/css/main.3b3c9588.chunk.css.map",
+    "static/js/2.6d248f7e.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.6d248f7e.chunk.js.LICENSE.txt",
     "static/media/code.svg": "/Gitfolio/static/media/code.bdc46519.svg",
     "static/media/coding.svg": "/Gitfolio/static/media/coding.25f28702.svg",
     "static/media/drawing.svg": "/Gitfolio/static/media/drawing.0302d0c9.svg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.5d834a90.js",
     "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.69507aca.chunk.js",
-    "static/css/main.ce7bfab1.chunk.css",
-    "static/js/main.9451fb71.chunk.js"
+    "static/js/2.6d248f7e.chunk.js",
+    "static/css/main.3b3c9588.chunk.css",
+    "static/js/main.f48b0e07.chunk.js"
   ]
 }

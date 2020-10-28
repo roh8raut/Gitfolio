@@ -23,7 +23,7 @@
 @media only screen and (max-width: 768px) {
     .main-container {
         flex-direction: column;
-        margin-top: 6rem;
+        padding-top: 6rem;
     }
 }
 /* translate(61px,-100px); */

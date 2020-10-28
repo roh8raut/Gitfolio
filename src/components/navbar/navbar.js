@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 // import menu from '../../assets/menu.svg';
 import Hamburger from '../hamburger/hamburger';
@@ -17,15 +17,15 @@ function Navbar() {
         setShowHamburger(!showHamburger);
     }
     return (
-        <div style={{position: "relative"}}>
+        <div style={{ position: "relative" }}>
             <Hamburger clickHandler={clickHandler} btnEle={btnEle} />
             <div className={`navbar__links ${showHamburger ? "isOpen" : ""}`}>
-                <span onClick={clickHandler}><Link to="/Gitfolio">Home</Link></span>
+                <span onClick={clickHandler}><Link to="/Gitfolio" >Home</Link></span>
                 <span onClick={clickHandler}><Link to="/Gitfolio/repo">Portfolio</Link></span>
                 <span onClick={clickHandler}><Link to="/Gitfolio/contact">Contact Me</Link></span>
                 {isMobile && <p className="content__addinfo--social" data-aos="fade-up">
-                    <a href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2"/></a>
-                    <a href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon"/></a>
+                    <a href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2" /></a>
+                    <a href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon" /></a>
                 </p>}
             </div>
         </div>

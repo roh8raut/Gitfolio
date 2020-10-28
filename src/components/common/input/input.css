@@ -3,8 +3,8 @@
     border-left: none;
     border-right: none;
     border-bottom: 2px solid white;
-    background-color: black;
-    color: yellowgreen;
+    background-color: inherit;
+    /* color: yellowgreen; */
     font-size: large;
     font-family: inherit;
 }

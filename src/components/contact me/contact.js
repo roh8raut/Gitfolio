@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import twitterIcon from '../../assets/icons/twitter.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import Input from '../common/input/input';
 import Button from '../common/buttons/buttons';
 import useValidation from '../../utility/useValidation';
 import './contact.css';
+import Bottomwave from '../waves/bottomwave';
 
 const Contact = () => {
     const [isLoading, setIsloading] = useState(false);
@@ -20,7 +21,7 @@ const Contact = () => {
         const emailError = emailObj.emailHandler(document.querySelector('input[name="Email"]'));
         const messageError = messageObj.messageHandler(document.querySelector('textarea[name="Message"]'));
 
-        if (!nameError && !emailError&& !messageError) {
+        if (!nameError && !emailError && !messageError) {
             return true;
         }
         return false;
@@ -33,21 +34,21 @@ const Contact = () => {
         }
 
         if (isvalidForm()) {
-                setIsloading(true);
-                const request = getObjRequest();
-                const url = `https://gmail-service.herokuapp.com/sendmessage`;
+            setIsloading(true);
+            const request = getObjRequest();
+            const url = `https://gmail-service.herokuapp.com/sendmessage`;
 
-                setTimeout(() => {
-                    btnElement.innerText = "About to Finish.."
-                }, 3000);
-                fetch(url, {
-                    method: 'POST',
-                    headers: {
+            setTimeout(() => {
+                btnElement.innerText = "About to Finish.."
+            }, 3000);
+            fetch(url, {
+                method: 'POST',
+                headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(request)
-                })
+                },
+                body: JSON.stringify(request)
+            })
                 .then((res) => {
                     res.json();
                 }).then((data) => {
@@ -71,27 +72,30 @@ const Contact = () => {
     }
 
     return (
-        
-        (response === "Success") ? <div className="response"><h1>Thanks!! For connecting to me will get in touch soon.😉</h1></div> :
-        (response === "Failure") ? <div  className="response"><h1>Ooops Something went wrong please check your internet connectivity or try again after some time.☹</h1></div> :
 
-        <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
-            <div>
-                <Input name="Name" handler={nameObj.nameHandler}/><br/>
-                {nameObj.error && <span className="error">{nameObj.error}</span>}
-            </div>
-            <div>
-                <Input name="Email" handler={emailObj.emailHandler} /><br/>
-                {emailObj.error && <span className="error">{emailObj.error}</span>}
-            </div>
-            <div>
-                <textarea name="Message" placeholder="Message" onChange={(e) => messageObj.messageHandler(e.target)} /><br/>
-                {messageObj.error && <span className="error">{messageObj.error}</span>}
-            </div>
-            <div>
-                <Button type="submit" text={isLoading ? "Loading..." : "Submit"} disabled={isLoading ? 'disabled' : ""}/>
-            </div>
-      </form>
+        (response === "Success") ? <div className="response"><h1>Thanks!! For connecting to me will get in touch soon.😉</h1></div> :
+            (response === "Failure") ? <div className="response"><h1>Ooops Something went wrong please check your internet connectivity or try again after some time.☹</h1></div> :
+
+                <div>
+                    <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
+                        <div>
+                            <Input name="Name" handler={nameObj.nameHandler} classList={`bottom-color-brown`} /><br />
+                            {nameObj.error && <span className="error">{nameObj.error}</span>}
+                        </div>
+                        <div>
+                            <Input name="Email" handler={emailObj.emailHandler} classList={`bottom-color-brown`} /><br />
+                            {emailObj.error && <span className="error">{emailObj.error}</span>}
+                        </div>
+                        <div>
+                            <textarea name="Message" placeholder="Message" onChange={(e) => messageObj.messageHandler(e.target)} className={`bottom-color-brown`} /><br />
+                            {messageObj.error && <span className="error">{messageObj.error}</span>}
+                        </div>
+                        <div>
+                            <Button type="submit" text={isLoading ? "Loading..." : "Submit"} classes={`background-orange color-white`} disabled={isLoading ? 'disabled' : ""} />
+                        </div>
+                    </form>
+                    <Bottomwave />
+                </div>
     );
 }
 

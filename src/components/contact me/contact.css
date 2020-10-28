@@ -9,12 +9,10 @@
 
 .contact-form {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('../../assets/w4.svg') no-repeat;
-    background-position-y: bottom; 
 }
 
 .contact-form div {
@@ -31,6 +29,10 @@
     position: absolute;
 }
 
+.wave-height-100 {
+    height: 400px;
+}
+
 
 @media only screen and (min-width: 768px) {
     .response {
@@ -38,7 +40,7 @@
         width: 80%;
     }
     .contact-form {
-        height: 100vh;
+        height: 80vh;
     }
     .contact-form div {
         width: 30%;

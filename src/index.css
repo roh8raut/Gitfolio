@@ -8,7 +8,8 @@ body {
   font-family: 'Jost', Fallback, sans-serif;
   -webkit-font-smoothing: antialia<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">sed;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: #ffe05d;
+  color: #f16821;
   /* background-size: 100% 80%; */
 }
 

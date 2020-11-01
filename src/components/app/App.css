@@ -1,26 +1,5 @@
 .App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  position: relative;
 }
 
 .color-white {
@@ -28,66 +7,24 @@
 }
 
 .background-orange {
-  background-color: #ff9642;
+  background-color: var(--root-background);
+}
+
+.switch {
+  position: absolute; 
+  top: 3%;
+  left: 15%;
+  z-index: 1000;
 }
 
 .bottom-color-brown {
   border-bottom: 2px solid #ac4b1c !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes shake {
-  0% {
-      transform: translateX(0);
-    }
-  
-    6.5% {
-      transform: translateX(-6px) rotateY(-9deg);
-    }
-  
-    18.5% {
-      transform: translateX(5px) rotateY(7deg);
-    }
-  
-    31.5% {
-      transform: translateX(-3px) rotateY(-5deg);
-    }
-  
-    43.5% {
-      transform: translateX(2px) rotateY(3deg);
-    }
-  
-    50% {
-      transform: translateX(0);
-    }
-}
-
-@keyframes fadeInFromLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-10%,0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes shadow-pulse
-{
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
-  }
+@media only screen and (min-width: 768px) {
+    /* .switch {
+      top: 50%;
+      left: 10%;
+    } */
 }

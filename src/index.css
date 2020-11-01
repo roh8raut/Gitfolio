@@ -3,19 +3,40 @@
   src:  url('../src/assets/reg.woff') format('woff2'),
         url('../src/assets/reg.woff') format('woff');
 }
+/*
+* CSS VARIABLES
+*/
+:root {
+  --root-background: #ffe05d;
+  --text-color: rgb(172, 75, 28);
+  --btn-primary: #ff9642;
+  --heading-color: #f16821;
+
+  --brown: #ac4b1c;
+  --orange: #ff9642;
+  --light-text: #ffefa0;
+  --green-yellow: greenyellow;
+  --navy: navy;
+  --black: black;
+}
+
+.light-theme {
+
+}
+
+.dark-theme {
+  
+}
+
+
 body {
   margin: 0;
   font-family: 'Jost', Fallback, sans-serif;
   -webkit-font-smoothing: antialia<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">sed;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffe05d;
+  background-color: var(--root-background);
   color: #f16821;
   /* background-size: 100% 80%; */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .holder {

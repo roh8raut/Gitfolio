@@ -1,5 +1,5 @@
 .work, .fork {
-    color:white;
+    color:var(--heading-color);
     font-size: 55px;
     font-weight: bold;
     text-align: left;

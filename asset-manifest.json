@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Gitfolio/static/css/main.3b3c9588.chunk.css",
-    "main.js": "/Gitfolio/static/js/main.f48b0e07.chunk.js",
-    "main.js.map": "/Gitfolio/static/js/main.f48b0e07.chunk.js.map",
+    "main.css": "/Gitfolio/static/css/main.b0599fa1.chunk.css",
+    "main.js": "/Gitfolio/static/js/main.9d3e10c4.chunk.js",
+    "main.js.map": "/Gitfolio/static/js/main.9d3e10c4.chunk.js.map",
     "runtime-main.js": "/Gitfolio/static/js/runtime-main.5d834a90.js",
     "runtime-main.js.map": "/Gitfolio/static/js/runtime-main.5d834a90.js.map",
     "static/css/2.eb43dee1.chunk.css": "/Gitfolio/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.6d248f7e.chunk.js": "/Gitfolio/static/js/2.6d248f7e.chunk.js",
-    "static/js/2.6d248f7e.chunk.js.map": "/Gitfolio/static/js/2.6d248f7e.chunk.js.map",
+    "static/js/2.bef76bc1.chunk.js": "/Gitfolio/static/js/2.bef76bc1.chunk.js",
+    "static/js/2.bef76bc1.chunk.js.map": "/Gitfolio/static/js/2.bef76bc1.chunk.js.map",
     "index.html": "/Gitfolio/index.html",
-    "precache-manifest.dae3ebf0ffd9a89c2f6ff42effc7afb0.js": "/Gitfolio/precache-manifest.dae3ebf0ffd9a89c2f6ff42effc7afb0.js",
+    "precache-manifest.e38594951dfb24d2724452e5137613de.js": "/Gitfolio/precache-manifest.e38594951dfb24d2724452e5137613de.js",
     "service-worker.js": "/Gitfolio/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/Gitfolio/static/css/2.eb43dee1.chunk.css.map",
-    "static/css/main.3b3c9588.chunk.css.map": "/Gitfolio/static/css/main.3b3c9588.chunk.css.map",
-    "static/js/2.6d248f7e.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.6d248f7e.chunk.js.LICENSE.txt",
+    "static/css/main.b0599fa1.chunk.css.map": "/Gitfolio/static/css/main.b0599fa1.chunk.css.map",
+    "static/js/2.bef76bc1.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.bef76bc1.chunk.js.LICENSE.txt",
     "static/media/code.svg": "/Gitfolio/static/media/code.bdc46519.svg",
     "static/media/coding.svg": "/Gitfolio/static/media/coding.25f28702.svg",
     "static/media/drawing.svg": "/Gitfolio/static/media/drawing.0302d0c9.svg",
@@ -21,14 +21,13 @@
     "static/media/location.svg": "/Gitfolio/static/media/location.5ecfdbbb.svg",
     "static/media/person.svg": "/Gitfolio/static/media/person.0f31e8b4.svg",
     "static/media/index.css": "/Gitfolio/static/media/reg.d7a2985b.woff",
-    "static/media/twitter.svg": "/Gitfolio/static/media/twitter.563d0357.svg",
-    "static/media/contact.css": "/Gitfolio/static/media/w4.517852b0.svg"
+    "static/media/twitter.svg": "/Gitfolio/static/media/twitter.563d0357.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5d834a90.js",
     "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.6d248f7e.chunk.js",
-    "static/css/main.3b3c9588.chunk.css",
-    "static/js/main.f48b0e07.chunk.js"
+    "static/js/2.bef76bc1.chunk.js",
+    "static/css/main.b0599fa1.chunk.css",
+    "static/js/main.9d3e10c4.chunk.js"
   ]
 }

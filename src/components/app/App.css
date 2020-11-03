@@ -1,5 +1,6 @@
 .App {
   position: relative;
+  min-height: 100vh;
 }
 
 .color-white {
@@ -11,9 +12,9 @@
 }
 
 .switch {
-  position: absolute; 
-  top: 3%;
-  left: 15%;
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
   z-index: 1000;
 }
 
@@ -21,10 +22,8 @@
   border-bottom: 2px solid #ac4b1c !important;
 }
 
-
 @media only screen and (min-width: 768px) {
-    /* .switch {
-      top: 50%;
-      left: 10%;
-    } */
+  .switch {
+    left: 7rem;
+  }
 }

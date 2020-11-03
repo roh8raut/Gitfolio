@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Jost';
-  src:  url('../src/assets/reg.woff') format('woff2'),
-        url('../src/assets/reg.woff') format('woff');
+  font-family: "Jost";
+  src: url("../src/assets/reg.woff") format("woff2"),
+    url("../src/assets/reg.woff") format("woff");
 }
 /*
 * CSS VARIABLES
@@ -18,21 +18,19 @@
   --green-yellow: greenyellow;
   --navy: navy;
   --black: black;
+  --purple: #6a097d;
 }
 
-.light-theme {
-
+.theme-dark {
+  --root-background: black;
 }
-
-.dark-theme {
-  
-}
-
 
 body {
   margin: 0;
-  font-family: 'Jost', Fallback, sans-serif;
-  -webkit-font-smoothing: antialia<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">sed;
+  font-family: "Jost", Fallback, sans-serif;
+  -webkit-font-smoothing: antialia<link rel= "stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >sed;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--root-background);
   color: #f16821;
@@ -44,14 +42,16 @@ body {
   height: 20px;
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
 
 button:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .hide {
-  display:none !important;
+  display: none !important;
 }
 
 .position--fixed {

@@ -1,40 +1,40 @@
 .main-container {
-    display: flex;
-    min-height: 50em;
+  display: flex;
+  min-height: 50em;
 }
 
 .main-container .profile-container {
-    flex: 1.5;
-    height: auto;
+  flex: 1.5;
+  height: auto;
 }
 
 .main-container .repos-container {
-    flex: 3
+  flex: 3;
 }
 
 .width__1 {
-    width: 1rem;
+  width: 1rem;
 }
 
 .width__2 {
-    width: 2rem;
+  width: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-        padding-top: 6rem;
-    }
+  .main-container {
+    flex-direction: column;
+    padding-top: 6rem;
+  }
 }
 /* translate(61px,-100px); */
 @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translate(0,50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate(61px, -100px);
-    }
+  from {
+    opacity: 0;
+    transform: translate(0, 50px);
   }
+
+  to {
+    opacity: 1;
+    transform: translate(61px, -100px);
+  }
+}

@@ -1,48 +1,57 @@
 .response {
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
 }
 
 .contact-form {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-form div {
-    padding-bottom: 40px;
-    width: 50%;
+  padding-bottom: 40px;
+  width: 50%;
 }
 
 .contact-form div *:not(span) {
-    width: 100%;
+  width: 100%;
 }
 
 .contact-form .error {
-    font-size: small;
-    position: absolute;
+  font-size: small;
+  position: absolute;
 }
 
 .wave-height-100 {
-    height: 400px;
+  height: 400px;
 }
 
+.contact-form input,
+textarea {
+  color: black;
+}
+
+.theme-dark .contact-form input,
+textarea {
+  color: var(--light-text);
+}
 
 @media only screen and (min-width: 768px) {
-    .response {
-        padding-left: 160px;
-        width: 80%;
-    }
-    .contact-form {
-        height: 80vh;
-    }
-    .contact-form div {
-        width: 30%;
-    }
+  .response {
+    padding-left: 160px;
+    width: 80%;
+  }
+  .contact-form {
+    height: 80vh;
+  }
+  .contact-form div {
+    width: 30%;
+  }
 }

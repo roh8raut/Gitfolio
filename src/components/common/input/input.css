@@ -1,14 +1,15 @@
-.input-text, textarea {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid white;
-    background-color: inherit;
-    /* color: yellowgreen; */
-    font-size: large;
-    font-family: inherit;
+.input-text,
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  background-color: inherit;
+  font-size: large;
+  font-family: inherit;
 }
 
-textarea:focus, input:focus{
-    outline: none;
+textarea:focus,
+input:focus {
+  outline: none;
 }

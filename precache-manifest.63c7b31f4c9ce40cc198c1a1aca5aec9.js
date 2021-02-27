@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78ab7b0bcb18b9279774795b8a071ee1",
+    "revision": "39efca9326769d91bd206e2e798c2a04",
     "url": "/Gitfolio/index.html"
   },
   {
-    "revision": "4731b83abfa695477d53",
+    "revision": "146e884949f0ebd591c5",
     "url": "/Gitfolio/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "312e34633797575f7749",
-    "url": "/Gitfolio/static/css/main.b0599fa1.chunk.css"
+    "revision": "92b1010bce284827dc0c",
+    "url": "/Gitfolio/static/css/main.4eec61f2.chunk.css"
   },
   {
-    "revision": "4731b83abfa695477d53",
-    "url": "/Gitfolio/static/js/2.bef76bc1.chunk.js"
+    "revision": "146e884949f0ebd591c5",
+    "url": "/Gitfolio/static/js/2.7644628e.chunk.js"
   },
   {
     "revision": "507c4436aa55e48136618e82a79cbf78",
-    "url": "/Gitfolio/static/js/2.bef76bc1.chunk.js.LICENSE.txt"
+    "url": "/Gitfolio/static/js/2.7644628e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "312e34633797575f7749",
-    "url": "/Gitfolio/static/js/main.9d3e10c4.chunk.js"
+    "revision": "92b1010bce284827dc0c",
+    "url": "/Gitfolio/static/js/main.2a922b17.chunk.js"
   },
   {
     "revision": "5b9ab52a625673778593",

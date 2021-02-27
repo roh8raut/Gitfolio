@@ -1,5 +1,5 @@
 .navbar {
-  --nav-background: var(--light-text);
+  --nav-background: var(--navy);
 }
 
 .hamburger {
@@ -60,7 +60,7 @@
 
 @media only screen and (min-width: 768px) {
   .navbar {
-    --nav-background: var(--brown);
+    --nav-background: var(--navy);
   }
 
   .theme-dark .navbar {

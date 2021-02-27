@@ -23,6 +23,7 @@ function Navbar() {
                 <span onClick={clickHandler}><Link to="/Gitfolio" >Home</Link></span>
                 <span onClick={clickHandler}><Link to="/Gitfolio/repo">Portfolio</Link></span>
                 <span onClick={clickHandler}><Link to="/Gitfolio/contact">Contact Me</Link></span>
+                <span><a href="https://drive.google.com/uc?id=1xjtv53ScI7gEOMfUY0JmKg0Pg4-edTmQ&amp;export=download" download="Rohit_Raut_Frontend">Resume</a></span>
                 {isMobile && <p className="content__addinfo--social" data-aos="fade-up">
                     <a href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2" /></a>
                     <a href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon" /></a>

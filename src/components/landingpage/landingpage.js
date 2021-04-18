@@ -12,7 +12,9 @@ const Landingpage = () => {
             <div className="intro">
                 <img src={Coding} className="desk" alt="desk" />
                 <div className="profile-card">
-                    <p data-aos="fade-up">Hey,I am Rohit Raut and I love building beautiful websites</p>
+                    <p style={{ "--order": 3 }}>Hey,I am Rohit Raut</p>
+                    <p style={{ "--order": 5 }}> and I love building </p>
+                    <p style={{ "--order": 7 }}>beautiful websites</p>
                 </div>
                 {/* <img src={Prof} alt="profile image" /> */}
                 <div className="about__img" >
@@ -33,7 +35,7 @@ const Landingpage = () => {
                     <Link to="/Gitfolio/contact"><Button text="Contact Me" classes="box-shadow-orange color-white background-orange" /></Link>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

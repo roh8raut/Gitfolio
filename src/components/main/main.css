@@ -27,14 +27,3 @@
   }
 }
 /* translate(61px,-100px); */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate(0, 50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(61px, -100px);
-  }
-}

@@ -36,9 +36,9 @@ const Profile = (props) => {
                         <span>Available</span>
                     </p>
 
-                    <p className="content__addinfo--social fade-top" style={{ "--order": 5 }}>
-                        <a href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2" /></a>
-                        <a href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon" /></a>
+                    <p className="content__addinfo--social fade-top " style={{ "--order": 5 }}>
+                        <a className="global-underline" href="https://twitter.com/wierdorohit123"><img src={twitterIcon} alt="twitter-icon" className="width__2" /></a>
+                        <a className="global-underline" href="https://in.linkedin.com/in/rautrohit"><img src={linkedinIcon} className="width__2" alt="linkedin icon" /></a>
                     </p>
                 </div>
             </div>

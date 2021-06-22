@@ -47,7 +47,7 @@ textarea {
   color: var(--light-text);
 }
 
-@media only screen and (min-width: 768px) {  
+@media only screen and (min-width: 768px) {
   .response {
     padding-left: 160px;
     width: 80%;
@@ -57,13 +57,5 @@ textarea {
   }
   .contact-form div {
     --contact-form-width: 30%;
-  }
-}
-
-@keyframes openFromLeft {
-  from {}
-  to {
-    opacity: 1;
-    width: var(--contact-form-width);
   }
 }

@@ -11,9 +11,7 @@
 */
 :root {
   --root-background: #ffffff;
-  --text-color: #0001;
   --btn-primary: #000000;
-  --heading-color: #000000;
 
   --brown: #ac4b1c;
   --orange: #ff9642;
@@ -23,6 +21,9 @@
   --black: black;
   --purple: #6a097d;
   --navbar: #000000;
+
+  --heading-color: var(--gray-01);
+  --text-color: var(--gray-02);
 
   --gray-00: #000000;
   --gray-01: #1c1c1c;
@@ -132,6 +133,7 @@
 .theme-dark {
   --root-background: black;
   --heading-color: #ffffff;
+  --text-color: var(--gray-09);
 }
 
 body {

@@ -1,6 +1,7 @@
 .intro {
   padding-top: 6rem;
   display: grid;
+  /* overflow-x: hidden; */
   /* background: url('../../assets/w5.svg') no-repeat fixed right bottom; */
   /* grid-row-gap: 15px; */
 }
@@ -16,8 +17,8 @@
   font-size: 2.5rem;
   font-weight: 600;
   padding: 1em;
-  line-height: 1.4;
-  text-align: center;
+  line-height: 1.2;
+  /* text-align: center; */
   color: var(--heading-color);
 }
 
@@ -37,7 +38,9 @@
 }
 
 .about__section p {
-  line-height: 1.6rem;
+  line-height: 2rem;
+  font-size: var(--font-size-04);
+  color: var(--text-color);
 }
 .ques {
   padding: 0em 2em 1em 2em;
@@ -54,6 +57,55 @@
 
 .border-bottom-blue {
   border-bottom: 6px solid #00e6cb;
+}
+
+.theme-dark .svg-icon-container .blob.blob2 {
+  opacity: 0.3 !important;
+}
+.svg-icon-container {
+  position: absolute;
+  /* left: 7%;
+  width: 1200px;
+  height: 500px; */
+  /* background: black; */
+}
+
+.svg-icon-container img {
+  position: absolute;
+  z-index: -1;
+}
+.svg-icon-container img.blob1 {
+  left: -211px;
+  top: 370px;
+  width: 400px;
+  height: 400px;
+}
+
+.svg-icon-container img.yellowface {
+  /* left: 250px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(-18deg); */
+}
+
+.svg-icon-container img.blob2 {
+  left: 140px;
+  top: 80rem;
+  width: 400px;
+  height: 400px;
+}
+.svg-icon-container img.blob3 {
+  left: 300px;
+  top: -150px;
+  width: 200px;
+  height: 200px;
+}
+.svg-icon-container img.blob4 {
+  /* right: 0px;
+  top: 300px;
+  width: 400px;
+  height: 400px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -82,7 +134,9 @@
     color: var(--heading-color);
     padding: 0;
   }
-
+  .profile-card h2 div {
+    visibility: hidden;
+  }
   .profile-card p {
     font-size: 3rem;
   }
@@ -98,6 +152,10 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .about__section p > span {
+    display: block;
+  }
   .intro h1 {
     width: 30rem;
     justify-self: center;
@@ -107,16 +165,11 @@
   }
 
   .svg-icon-container {
-    position: absolute;
+    /* position: absolute; */
     left: 7%;
     width: 1200px;
     height: 500px;
     /* background: black; */
-  }
-
-  .svg-icon-container img {
-    position: absolute;
-    z-index: -1;
   }
 
   .svg-icon-container img.blob1 {
@@ -158,4 +211,3 @@
     height: 400px;
   }
 }
-/* #e8f4f4 */

@@ -14,21 +14,14 @@ const Repo = (props) => {
   };
   const repoObj = props.repoObj;
 
-  //   const changeBackground = (e) => {
-  //     console.log("isnide onclick");
-  //     const colors = [
-  //       "#ffe254",
-  //       "#ffefa0",
-  //       "#f0e68c",
-  //       "#ffd07d",
-  //       "#ffef00",
-  //       "#eedc82",
-  //     ];
+  // const changeBackground = (e) => {
+  //     console.log("isnide onclick")
+  //     const colors = ["#ffe254", "#ffefa0", "#f0e68c", "#ffd07d", "#ffef00", "#eedc82"];
   //     const randomColor = () => colors[Math.floor(Math.random() * colors.length)];
   //     document.documentElement.style.cssText = `
-  //             --repo-background-hover: ${randomColor()}
-  //         `;
-  //   };
+  //         --repo-background-hover: ${randomColor()}
+  //     `
+  // };
 
   return (
     <div className="repo__card" onClick={handleClick}>

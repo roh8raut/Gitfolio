@@ -78,7 +78,12 @@ const Contact = () => {
 
   return response === "Success" ? (
     <div className="response">
-      <h1>Thanks!! For connecting to me will get in touch soon.😉</h1>
+      <h1>
+        Thanks!! For connecting to me will get in touch soon.
+        <span role="img" aria-label="Wink emoji">
+          😉
+        </span>
+      </h1>
     </div>
   ) : response === "Failure" ? (
     <div className="response">

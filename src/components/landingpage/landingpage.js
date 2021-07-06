@@ -48,7 +48,7 @@ const Landingpage = () => {
     ScrollTrigger.matchMedia({
       "(min-width: 800px)": function () {
         gsap.from(".border-bottom-blue", {
-          width: 160,
+          //   width: 160,
           ease: "power4.easeIn",
           // duration: 5,
           scrollTrigger: {
@@ -80,7 +80,7 @@ const Landingpage = () => {
   return (
     <div>
       <div className="intro">
-        <div className="svg-icon-container">
+        {/* <div className="svg-icon-container">
           <div>
             <img ref={iconOneRef} src={blob1} className="blob1" alt="desk" />
           </div>
@@ -96,16 +96,18 @@ const Landingpage = () => {
           <div>
             <img src={blob2} className="blob blob4" alt="desk" />
           </div>
+        </div> */}
+        <div className="">
+          <img src={Coding} className="desk" alt="desk" />
         </div>
-        <img src={Coding} className="desk" alt="desk" />
         <div className="profile-card">
           {/* <p style={{ "--order": 3 }}>Hey,I am Rohit Raut</p>
                     <p style={{ "--order": 5 }}> and I love building </p>
                     <p style={{ "--order": 7 }}>beautiful websites</p> */}
-          <h2 className="global-underline" ref={headingTextRef}>
-            <div>Hey,I am Rohit Raut </div>
-            <div>and I love building</div>
-            <div>beautiful websites</div>
+          <h2 ref={headingTextRef}>
+            <div className="global-underline">Hey,I am Rohit Raut </div>
+            <div className="global-underline">and I love building</div>
+            <div className="global-underline">beautiful websites</div>
           </h2>
         </div>
         {/* <img src={Prof} alt="profile image" /> */}
@@ -118,17 +120,12 @@ const Landingpage = () => {
           />
         </div>
         <div className="about__section">
-          <div
-            style={
-              {
-                /*background: "yellow"*/
-              }
-            }
-            data-aos="fade-up"
-          >
+          <div>
             <h1 className="border-bottom-blue" ref={scrollTriggerRefTest}>
               <span>About Me</span>
             </h1>
+          </div>
+          <div>
             <p className="about-desc">
               I'm a front-end developer with professional experience. I write
               accessible HTML, modern CSS and follow best practices of
@@ -146,16 +143,25 @@ const Landingpage = () => {
             </p>
           </div>
         </div>
-        <h1 className="ques" data-aos="fade-down-right">
-          Interested in doing project together ?
-        </h1>
-        <div style={{ justifySelf: "center", padding: "1em" }}>
-          <Link to="/Gitfolio/contact">
-            <Button
-              text="Contact Me"
-              classes="box-shadow-green color-white background-orange"
-            />
-          </Link>
+        <div className="contact_link_section">
+          <div className={"ques"}>
+            <h1>Interested in doing project together ?</h1>
+          </div>
+          <div
+            className="contant-me-btn"
+            style={
+              {
+                /* padding: "1em"*/
+              }
+            }
+          >
+            <Link to="/Gitfolio/contact">
+              <Button
+                text="Contact Me"
+                classes="box-shadow-green color-white background-orange"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

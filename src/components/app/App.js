@@ -18,7 +18,7 @@ function App() {
   }, [toggle]);
 
   return (
-    <div className={App}>
+    <div className="App">
       <Switch on={toggle} toggle={toggleElem} />
       <Main />
     </div>

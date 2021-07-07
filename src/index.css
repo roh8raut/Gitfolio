@@ -157,22 +157,14 @@ img {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  h1,
-  h2 {
-    font-size: var(--font-size-01);
+@keyframes fadeTop {
+  20% {
+    opacity: 0;
+    transform: translateY(-20%);
   }
-  p {
-    font-size: var(--font-size-03);
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
-
-/* @media only screen and (min-width: 1200px) {
-  h1,
-  h2 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-} */

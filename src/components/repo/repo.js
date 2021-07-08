@@ -24,8 +24,10 @@ const Repo = (props) => {
   // };
 
   return (
-    <div className="repo__card" onClick={handleClick}>
-      <h2>{(repoObj && repoObj.name) || <Placeholder width="150" />}</h2>
+    <div className="repo__card " onClick={handleClick}>
+      <h2 className="repo__name">
+        <span>{(repoObj && repoObj.name) || <Placeholder width="150" />}</span>
+      </h2>
       <div className="desc">
         {(repoObj && repoObj.desc) || <Placeholder width="350" />}
       </div>

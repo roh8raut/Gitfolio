@@ -111,8 +111,8 @@ html {
   --color-text-secondary: var(--gray-09);
   --color-text-muted: var(--gray-06);
 
-  --btn-background-color: var(--gray-00);
-  --btn-text-color: var(--gray-11);
+  --btn-background-color: var(--gray-11);
+  --btn-text-color: var(--gray-00);
 }
 
 body {

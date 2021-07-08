@@ -16,7 +16,7 @@ html {
 */
 :root {
   --root-background: #ffffff;
-  --btn-primary: #000000;
+  --btn-primary: var(--gray-00);
 
   --brown: #ac4b1c;
   --orange: #ff9642;
@@ -27,9 +27,11 @@ html {
   --purple: #6a097d;
   --navbar: #000000;
 
+  --background-color: var(--gray-00);
   --heading-color: var(--gray-01);
   --text-color: var(--gray-02);
 
+  /*Gray colors shahdes*/
   --gray-00: #000000;
   --gray-01: #1c1c1c;
   --gray-02: #303030;
@@ -49,7 +51,7 @@ html {
   /* //Font Size */
   --font-size-01: 3.5rem;
   --font-size-02: 2.5rem;
-  --font-size-03: 1.2rem;
+  --font-size-03: 1.5rem;
 
   /* //Line Height */
   --line-height-01: 1;
@@ -71,15 +73,16 @@ html {
   --spacing-08: 40px;
 
   /* //Brand Colors */
-  --color-primary: var(--gray-00);
-  --color-secundary: var(--gray-11);
+  /* --color-primary: var(--gray-00);
+  --color-secundary: var(--gray-11); */
 
   --color-text-primary: var(--gray-00);
-  /* --color-text-secondary: ;
-  --color-text-placeholder: ; */
-  --color-text-muted: ; /*light color*/
-  --color-text-icon-default: ;
-  --color-text-icon-default-disabled: #dddbda;
+  --color-text-secondary: var(--gray-02);
+  --color-text-muted: var(--gray-06);
+
+  --btn-background-color: var(--gray-00);
+  --btn-text-color: var(--gray-11);
+
   --color-text-button-default-disabled: #dddbda;
   --color-text-error: #ea001e;
   --color-text-required: #ea001e;
@@ -91,35 +94,22 @@ html {
   --media-query-03: 992px;
   --media-query-04: 1200px;
 
-  /* //Box Shadow */
-  --box-shadow-01: 4px 0 8px 0 rgba(0, 0, 0, 0.16);
-  --box-shadow-02: 8px 0 16px 0 rgba(0, 0, 0, 0.16);
-  --box-shadow-03: 16px 0 24px 0 rgba(0, 0, 0, 0.16);
-
-  /* //Border Width */
-  --border-01: 1px;
-  --border-02: 2px;
-  --border-03: 4px;
-
   /* //Border Radius */
   --border-radius-01: 30px;
-
-  /* //Icon Size */
-  --icon-size-01: 16px;
-  --icon-size-02: 24px;
-  --icon-size-03: 46px;
-
-  /* //Opacity */
-  --opacity-01: 0.1;
-  --opacity-02: 0.4;
-  --opacity-03: 0.6;
-  --opacity-04: 0.8;
 }
 
 .theme-dark {
-  --root-background: black;
-  --heading-color: #ffffff;
-  --text-color: var(--gray-09);
+  --root-background: var(--gray-00);
+  --background-color: var(--gray-11);
+  --heading-color: var(--gray-00);
+  --text-color: var(--gray-00);
+
+  --color-text-primary: var(--gray-11);
+  --color-text-secondary: var(--gray-09);
+  --color-text-muted: var(--gray-06);
+
+  --btn-background-color: var(--gray-00);
+  --btn-text-color: var(--gray-11);
 }
 
 body {
@@ -137,8 +127,7 @@ body {
   /* background-size: 100% 80%; */
 }
 
-h1,
-h2 {
+h1 {
   font-size: 2.5rem;
   line-height: var(--line-height-01);
 }
@@ -148,8 +137,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  h1,
-  h2 {
+  h1 {
     font-size: var(--font-size-02);
   }
   p {
@@ -157,14 +145,8 @@ img {
   }
 }
 
-@keyframes fadeTop {
-  20% {
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
+@media only screen and (min-width: 1024px) {
+  h1 {
+    /* font-size: var(--font-size-01); */
   }
 }

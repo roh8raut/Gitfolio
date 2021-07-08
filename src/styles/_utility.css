@@ -48,3 +48,14 @@ button:hover {
 .spin-animate {
   animation: spin 5s linear infinite;
 }
+
+.max-width-1400 {
+  max-width: 1400px;
+}
+.margin-auto {
+  margin: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}

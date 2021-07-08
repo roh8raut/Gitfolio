@@ -6,5 +6,6 @@
   border-bottom-right-radius: var(--border-radius-01);
   border-top-left-radius: var(--border-radius-01);
   border: none;
-  background-color: var(--btn-primary);
+  background-color: var(--btn-background-color);
+  color: var(--btn-text-color);
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import twitterIcon from '../../assets/icons/twitter.svg';
 // import linkedinIcon from '../../assets/icons/linkedin.svg';
 import Input from "../common/input/input";
@@ -6,6 +6,7 @@ import Button from "../common/buttons/buttons";
 import useValidation from "../../utility/useValidation";
 import "./contact.css";
 import Bottomwave from "../waves/bottomwave";
+import { gsap } from "gsap";
 
 const Contact = () => {
   const [isLoading, setIsloading] = useState(false);
@@ -14,6 +15,19 @@ const Contact = () => {
   const nameObj = useValidation();
   const emailObj = useValidation();
   const messageObj = useValidation();
+
+  useEffect(() => {
+    gsap
+      .timeline()
+      .from(document.querySelector("form").querySelectorAll("div"), {
+        y: 25,
+        delay: 0.1,
+        duration: 0.5,
+        ease: "power4.easeIn",
+        stagger: 0.3,
+        autoAlpha: 0,
+      });
+  }, []);
 
   const isvalidForm = () => {
     const nameError = nameObj.nameHandler(
@@ -94,7 +108,10 @@ const Contact = () => {
     </div>
   ) : (
     <div>
-      <form className="contact-form" onSubmit={handleSubmit} data-aos="fade-up">
+      <form
+        className="contact-form max-width-1400 margin-auto"
+        onSubmit={handleSubmit}
+      >
         <div>
           <Input
             name="Name"

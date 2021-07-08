@@ -78,7 +78,7 @@ const Landingpage = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="max-width-1400 margin-auto">
       <div className="intro">
         {/* <div className="svg-icon-container">
           <div>
@@ -116,7 +116,6 @@ const Landingpage = () => {
             src={N}
             className="about_img"
             alt="img beside anout me section"
-            data-aos="fade-up"
           />
         </div>
         <div className="about__section">

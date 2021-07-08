@@ -16,12 +16,8 @@
 }
 
 .contact-form div {
-  --contact-form-width: 50%;
   padding-bottom: 40px;
-  width: 0%;
-  opacity: 0;
-  animation: openFromLeft 1s ease 0.5s forwards;
-  transition: all 0s ease;
+  width: 50%;
 }
 
 .contact-form div *:not(span) {
@@ -56,6 +52,6 @@ textarea {
     height: 80vh;
   }
   .contact-form div {
-    --contact-form-width: 30%;
+    width: 30%;
   }
 }

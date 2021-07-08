@@ -35,7 +35,10 @@ const Repo = (props) => {
             <img src={codeIcon} alt="code-icon" className="width__1" />
             <span className="language">{repoObj.language}</span>
             {repoObj.homePage ? (
-              <strong className="prototype" onClick={handlePrototypeClick}>
+              <strong
+                className="prototype global-underline"
+                onClick={handlePrototypeClick}
+              >
                 Prototype
               </strong>
             ) : (

@@ -13,7 +13,7 @@
   color: var(--color-text-primary);
 }
 .about__section span {
-  background: #00e6cb;
+  background: var(--egg-blue);
 }
 
 .about-desc {
@@ -25,11 +25,11 @@
 }
 
 .box-shadow-green {
-  box-shadow: 2px 2px 10px 5px #00e6cb;
+  box-shadow: 2px 2px 10px 5px var(--egg-blue);
 }
 
 .border-bottom-blue {
-  border-bottom: 11px solid #00e6cb;
+  border-bottom: 11px solid var(--egg-blue);
 }
 
 .contact_link_section {

@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*
 * CSS VARIABLES
 */
@@ -27,10 +31,7 @@ html {
   --purple: #6a097d;
   --navbar: #000000;
 
-  --background-color: var(--gray-00);
-  --heading-color: var(--gray-01);
-  --text-color: var(--gray-02);
-
+  --egg-blue: #00e6cb;
   /*Gray colors shahdes*/
   --gray-00: #000000;
   --gray-01: #1c1c1c;
@@ -44,6 +45,11 @@ html {
   --gray-09: #d1d1d1;
   --gray-10: #e8e8e8;
   --gray-11: #ffffff;
+
+  --background-color: var(--gray-00);
+  --heading-color: var(--gray-01);
+  --text-color: var(--gray-00);
+  --text-color-invert: var(--gray-11);
 
   /* //Font Family */
   --font-family-01: Jost, sans-serif;
@@ -72,10 +78,6 @@ html {
   --spacing-07: 32px;
   --spacing-08: 40px;
 
-  /* //Brand Colors */
-  /* --color-primary: var(--gray-00);
-  --color-secundary: var(--gray-11); */
-
   --color-text-primary: var(--gray-00);
   --color-text-secondary: var(--gray-02);
   --color-text-muted: var(--gray-06);
@@ -102,7 +104,8 @@ html {
   --root-background: var(--gray-00);
   --background-color: var(--gray-11);
   --heading-color: var(--gray-00);
-  --text-color: var(--gray-00);
+  --text-color: var(--gray-11);
+  --text-color-invert: var(--gray-00);
 
   --color-text-primary: var(--gray-11);
   --color-text-secondary: var(--gray-09);

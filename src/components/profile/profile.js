@@ -49,7 +49,9 @@ const Profile = (props) => {
         <div className="content-user-details">
           <div className="content__name " style={{ "--order": 1 }}>
             <span>
-              {(userObj && userObj.login) || <Placeholder width="100" />}
+              {(userObj && userObj.login) || (
+                <Placeholder width="100" height="20" />
+              )}
             </span>
           </div>
           <div className="content__link " style={{ "--order": 2 }}>

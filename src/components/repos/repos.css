@@ -11,7 +11,7 @@
 .repo-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 40px;
 }
 
@@ -24,9 +24,23 @@
   width: 110px;
 }
 
+.placeholder-container {
+  margin-bottom: 10px;
+  flex-basis: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .aboutBtn {
     float: none;
     position: static;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .repo-container {
+    justify-content: space-between;
+  }
+  .placeholder-container {
+    flex-basis: 47%;
   }
 }

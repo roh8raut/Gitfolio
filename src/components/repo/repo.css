@@ -2,7 +2,7 @@
   --repo-background: var(--background-color);
   --repo-color: #ffefa0;
   --repo-span-language-color: var(--green-yellow);
-  --repo-text-prototype: blue;
+  --repo-text-prototype: yellow;
   --repo-text-shadow: black;
 }
 
@@ -47,6 +47,7 @@ span.language {
 }
 
 strong.prototype {
+  text-decoration: underline;
   cursor: pointer;
   float: right;
   color: var(--repo-text-prototype);

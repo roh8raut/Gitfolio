@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import twitterIcon from '../../assets/icons/twitter.svg';
 // import linkedinIcon from '../../assets/icons/linkedin.svg';
+import planeIcon from "../../assets/icons/plane.svg";
 import Input from "../common/input/input";
 import Button from "../common/buttons/buttons";
 import useValidation from "../../utility/useValidation";
@@ -148,6 +149,7 @@ const Contact = () => {
             text={isLoading ? "Loading..." : "Submit"}
             classes={`background-orange color-white`}
             disabled={isLoading ? "disabled" : ""}
+            icon={planeIcon}
           />
         </div>
       </form>

@@ -15,7 +15,7 @@ const Portfolio = () => {
       const decodeData = JSON.parse(atob(userAndRepoDetails));
       setUserDetails(decodeData.userDetails);
       setRepoDetails(decodeData.repoDetails);
-      // setIsLoaded(true);
+      setIsLoaded(true);
     } else {
       (async () => {
         const data = {};

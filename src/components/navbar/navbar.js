@@ -35,14 +35,14 @@ function Navbar() {
             Contact Me
           </NavLink>
         </span>
-        <span>
+        {/* <span>
           <a
             href="https://drive.google.com/uc?id=1xjtv53ScI7gEOMfUY0JmKg0Pg4-edTmQ&amp;export=download"
             download="Rohit_Raut_Frontend"
           >
             Resume
           </a>
-        </span>
+        </span> */}
         {isMobile && (
           <p className="content__addinfo--social">
             <a href="https://twitter.com/wierdorohit123">

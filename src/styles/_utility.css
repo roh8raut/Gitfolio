@@ -59,3 +59,35 @@ button:hover {
 .overflow-x-hidden {
   overflow-x: hidden;
 }
+
+.shine {
+  background: linear-gradient(
+    to bottom right,
+    #eeeeee 40%,
+    #dddddd 50%,
+    #eeeeee 60%
+  );
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  animation: placeholderShimmer 0.5s infinite linear;
+}
+/* .theme-dark .shine {
+  background: var(--gray-05);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gray-08) 0%,
+    var(--gray-07) 20%,
+    var(--gray-06) 40%,
+    var(--gray-05) 100%
+  );
+} */
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 100% 100%; /*OR bottom right*/
+  }
+
+  100% {
+    background-position: 0 0; /*OR top left*/
+  }
+}

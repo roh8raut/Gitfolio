@@ -51,6 +51,8 @@
     left: 4rem;
     top: 15rem;
     order: -1;
+    text-align: initial;
+    width: fit-content;
   }
 
   .about__section {
@@ -81,7 +83,7 @@
 
 @media only screen and (min-width: 1024px) {
   .profile-card {
-    top: 48%;
+    /* top: 48%; */
     font-size: var(--font-size-02);
   }
   .ques {

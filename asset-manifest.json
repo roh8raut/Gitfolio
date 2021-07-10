@@ -1,30 +1,36 @@
 {
   "files": {
-    "main.css": "/Gitfolio/static/css/main.8fb1cfcf.chunk.css",
-    "main.js": "/Gitfolio/static/js/main.68644fde.chunk.js",
-    "main.js.map": "/Gitfolio/static/js/main.68644fde.chunk.js.map",
+    "main.css": "/Gitfolio/static/css/main.13f86595.chunk.css",
+    "main.js": "/Gitfolio/static/js/main.eef6d6f4.chunk.js",
+    "main.js.map": "/Gitfolio/static/js/main.eef6d6f4.chunk.js.map",
     "runtime-main.js": "/Gitfolio/static/js/runtime-main.5d834a90.js",
     "runtime-main.js.map": "/Gitfolio/static/js/runtime-main.5d834a90.js.map",
-    "static/js/2.9c544848.chunk.js": "/Gitfolio/static/js/2.9c544848.chunk.js",
-    "static/js/2.9c544848.chunk.js.map": "/Gitfolio/static/js/2.9c544848.chunk.js.map",
+    "static/js/2.bf38e596.chunk.js": "/Gitfolio/static/js/2.bf38e596.chunk.js",
+    "static/js/2.bf38e596.chunk.js.map": "/Gitfolio/static/js/2.bf38e596.chunk.js.map",
     "index.html": "/Gitfolio/index.html",
-    "precache-manifest.5596d4c0289cfde0fb5302401f71c77f.js": "/Gitfolio/precache-manifest.5596d4c0289cfde0fb5302401f71c77f.js",
+    "precache-manifest.d0eade6dc102c91cd51e6c3ed7ce8b6a.js": "/Gitfolio/precache-manifest.d0eade6dc102c91cd51e6c3ed7ce8b6a.js",
     "service-worker.js": "/Gitfolio/service-worker.js",
-    "static/css/main.8fb1cfcf.chunk.css.map": "/Gitfolio/static/css/main.8fb1cfcf.chunk.css.map",
-    "static/js/2.9c544848.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.9c544848.chunk.js.LICENSE.txt",
+    "static/css/main.13f86595.chunk.css.map": "/Gitfolio/static/css/main.13f86595.chunk.css.map",
+    "static/js/2.bf38e596.chunk.js.LICENSE.txt": "/Gitfolio/static/js/2.bf38e596.chunk.js.LICENSE.txt",
+    "static/media/blob1.svg": "/Gitfolio/static/media/blob1.a1316715.svg",
+    "static/media/blob2.svg": "/Gitfolio/static/media/blob2.499cca91.svg",
+    "static/media/blob3.svg": "/Gitfolio/static/media/blob3.fd15e939.svg",
+    "static/media/brackets.svg": "/Gitfolio/static/media/brackets.95be3b5a.svg",
     "static/media/code.svg": "/Gitfolio/static/media/code.bdc46519.svg",
     "static/media/coding.svg": "/Gitfolio/static/media/coding.25f28702.svg",
     "static/media/drawing.svg": "/Gitfolio/static/media/drawing.0302d0c9.svg",
     "static/media/linkedin.svg": "/Gitfolio/static/media/linkedin.286ac691.svg",
     "static/media/location.svg": "/Gitfolio/static/media/location.5ecfdbbb.svg",
     "static/media/person.svg": "/Gitfolio/static/media/person.0f31e8b4.svg",
+    "static/media/plane.svg": "/Gitfolio/static/media/plane.fd23bbe3.svg",
     "static/media/index.css": "/Gitfolio/static/media/reg.d7a2985b.woff",
+    "static/media/star.svg": "/Gitfolio/static/media/star.0aac87d7.svg",
     "static/media/twitter.svg": "/Gitfolio/static/media/twitter.563d0357.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5d834a90.js",
-    "static/js/2.9c544848.chunk.js",
-    "static/css/main.8fb1cfcf.chunk.css",
-    "static/js/main.68644fde.chunk.js"
+    "static/js/2.bf38e596.chunk.js",
+    "static/css/main.13f86595.chunk.css",
+    "static/js/main.eef6d6f4.chunk.js"
   ]
 }

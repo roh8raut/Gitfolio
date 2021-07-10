@@ -1,7 +1,7 @@
 .content {
   padding-left: 30px;
   position: fixed;
-  color: var(--heading-color);
+  color: var(--color-text-primary);
   display: flex;
   flex-direction: column;
   align-items: center;

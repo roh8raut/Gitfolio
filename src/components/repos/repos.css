@@ -1,32 +1,46 @@
-.work, .fork {
-    color:var(--heading-color);
-    font-size: 55px;
-    font-weight: bold;
-    text-align: left;
-    padding-left: 45px;
-    padding-top: 30px;
-    /* animation: 1.5s fadeInUp; */
+.work,
+.fork {
+  color: var(--color-text-primary);
+  font-size: 55px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 45px;
+  padding-top: 30px;
 }
 
 .repo-container {
-    display: flex;
-    flex-flow: row wrap;   
-    justify-content: space-between;
-    padding: 0 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 40px;
 }
 
 .aboutBtn {
-    float: right;
-    position: relative;
-    right: 60px;
-    top: 70px;
-    padding: 5px;
-    width: 110px;
+  float: right;
+  position: relative;
+  right: 60px;
+  top: 70px;
+  padding: 5px;
+  width: 110px;
+}
+
+.placeholder-container {
+  margin-bottom: 10px;
+  flex-basis: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-    .aboutBtn {
-        float: none;
-        position: static;
-    }
+  .aboutBtn {
+    float: none;
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .repo-container {
+    justify-content: space-between;
+  }
+  .placeholder-container {
+    flex-basis: 47%;
+  }
 }

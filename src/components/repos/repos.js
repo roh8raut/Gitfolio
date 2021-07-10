@@ -1,6 +1,8 @@
 import React from "react";
 import "./repos.css";
 import Repo from "../repo/repo";
+import Placeholder from "../placeholder/placeholder";
+
 // import {Link} from 'react-router-dom';
 
 const Repos = (props) => {
@@ -35,13 +37,25 @@ const Repos = (props) => {
   } else {
     var repoHolder = [];
     for (let i = 0; i < 8; i++) {
-      repoHolder.push(<Repo key={i} />);
+      repoHolder.push(i);
     }
-
+    console.log(repoHolder);
     return (
       <div className="repos-container">
         <h1 className="work">Work.</h1>
-        <div className="repo-container">{repoHolder}</div>
+        <div className="repo-container">
+          {repoHolder.map((r) => (
+            <div className="placeholder-container">
+              <Placeholder
+                width="100%"
+                height="100%"
+                styleObj={{ backgroundColor: "" }}
+              >
+                {/* <rect width="200" height="100" className="shine" /> */}
+              </Placeholder>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

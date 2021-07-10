@@ -1,11 +1,19 @@
 .btn__generic {
-    width: 14rem;
-    height: 4rem;
-    border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border: none;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 1em;
-    background-color: var(--btn-primary);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1em 2em;
+  border-bottom-right-radius: var(--border-radius-01);
+  border-top-left-radius: var(--border-radius-01);
+  border: none;
+  background-color: var(--btn-background-color);
+  color: var(--btn-text-color);
+}
+
+.btn-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+  vertical-align: sub;
 }

@@ -1,78 +1,155 @@
+@import url("./styles/_keyframes.css");
+@import url("./styles/_utility.css");
+
 @font-face {
   font-family: "Jost";
   src: url("../src/assets/reg.woff") format("woff2"),
     url("../src/assets/reg.woff") format("woff");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /*
 * CSS VARIABLES
 */
 :root {
-  --root-background: #ffe05d;
-  --text-color: rgb(172, 75, 28);
-  --btn-primary: #ff9642;
-  --heading-color: #f16821;
+  --root-background: #ffffff;
+  --btn-primary: var(--gray-00);
 
   --brown: #ac4b1c;
   --orange: #ff9642;
-  --light-text: #ffefa0;
+  --light-text: #ffffff;
   --green-yellow: greenyellow;
   --navy: navy;
   --black: black;
   --purple: #6a097d;
+  --navbar: #000000;
+
+  --egg-blue: #00e6cb;
+  /*Gray colors shahdes*/
+  --gray-00: #000000;
+  --gray-01: #1c1c1c;
+  --gray-02: #303030;
+  --gray-03: #474747;
+  --gray-04: #5d5d5d;
+  --gray-05: #757575;
+  --gray-06: #8c8c8c;
+  --gray-07: #a3a3a3;
+  --gray-08: #bababa;
+  --gray-09: #d1d1d1;
+  --gray-10: #e8e8e8;
+  --gray-11: #ffffff;
+
+  --background-color: var(--gray-00);
+  --heading-color: var(--gray-01);
+  --text-color: var(--gray-00);
+  --text-color-invert: var(--gray-11);
+
+  /* //Font Family */
+  --font-family-01: Jost, sans-serif;
+
+  /* //Font Size */
+  --font-size-01: 3.5rem;
+  --font-size-02: 2.5rem;
+  --font-size-03: 1.5rem;
+
+  /* //Line Height */
+  --line-height-01: 1;
+  --line-height-02: 1.5;
+
+  /* //Font Weight */
+  --font-weight-01: normal;
+  --font-weight-02: medium;
+  --font-weight-03: bold;
+
+  /*Spacing*/
+  --spacing-01: 2px;
+  --spacing-02: 4px;
+  --spacing-03: 8px;
+  --spacing-04: 12px;
+  --spacing-05: 16px;
+  --spacing-06: 24px;
+  --spacing-07: 32px;
+  --spacing-08: 40px;
+
+  --color-text-primary: var(--gray-00);
+  --color-text-secondary: var(--gray-02);
+  --color-text-muted: var(--gray-06);
+
+  --btn-background-color: var(--gray-00);
+  --btn-text-color: var(--gray-11);
+
+  --color-text-button-default-disabled: #dddbda;
+  --color-text-error: #ea001e;
+  --color-text-required: #ea001e;
+  --color-text-success: #2e844a;
+
+  /* //Media Query */
+  --media-query-01: 576px;
+  --media-query-02: 768px;
+  --media-query-03: 992px;
+  --media-query-04: 1200px;
+
+  /* //Border Radius */
+  --border-radius-01: 30px;
 }
 
 .theme-dark {
-  --root-background: black;
+  --root-background: var(--gray-00);
+  --background-color: var(--gray-11);
+  --heading-color: var(--gray-00);
+  --text-color: var(--gray-11);
+  --text-color-invert: var(--gray-00);
+
+  --color-text-primary: var(--gray-11);
+  --color-text-secondary: var(--gray-09);
+  --color-text-muted: var(--gray-06);
+
+  --btn-background-color: var(--gray-11);
+  --btn-text-color: var(--gray-00);
 }
 
 body {
   margin: 0;
+  background-color: white;
+  cursor: default;
+  box-sizing: border-box;
   font-family: "Jost", Fallback, sans-serif;
   -webkit-font-smoothing: antialia<link rel= "stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >sed;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--root-background);
-  color: #f16821;
+  color: var(--light-text);
   /* background-size: 100% 80%; */
 }
 
-.holder {
-  background-color: grey;
-  height: 20px;
+h1 {
+  font-size: 2.5rem;
+  line-height: var(--line-height-01);
 }
 
-button:focus {
-  outline: 0;
+img {
+  width: 100%;
 }
 
-button:hover {
-  cursor: pointer;
-}
-
-.hide {
-  display: none !important;
-}
-
-.position--fixed {
-  position: fixed;
-}
-
-.error {
-  color: red;
-}
-.error-border {
-  border: solid 1px red;
-}
-
-@keyframes fadeTop {
-  20% {
-    opacity: 0;
-    transform: translateY(-20%);
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: var(--font-size-02);
   }
+  p {
+    font-size: 1.3rem;
+  }
+}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
+@media only screen and (min-width: 1024px) {
+  h1 {
+    /* font-size: var(--font-size-01); */
   }
 }

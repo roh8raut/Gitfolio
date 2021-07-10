@@ -4,50 +4,49 @@ import Placeholder from "../placeholder/placeholder";
 import codeIcon from "../../assets/icons/code.svg";
 
 const Repo = (props) => {
+  const { desc, language, name, homePage, url } = props.repoObj;
   const handleClick = () => {
-    window.open(props.repoObj.url);
+    window.open(url);
   };
 
   const handlePrototypeClick = (e) => {
     e.stopPropagation();
-    window.open(props.repoObj.homePage);
+    window.open(homePage);
   };
-  const repoObj = props.repoObj;
-
-  // const changeBackground = (e) => {
-  //     console.log("isnide onclick")
-  //     const colors = ["#ffe254", "#ffefa0", "#f0e68c", "#ffd07d", "#ffef00", "#eedc82"];
-  //     const randomColor = () => colors[Math.floor(Math.random() * colors.length)];
-  //     document.documentElement.style.cssText = `
-  //         --repo-background-hover: ${randomColor()}
-  //     `
-  // };
 
   return (
-    <div className="repo__card" onClick={handleClick}>
-      <h2>{(repoObj && repoObj.name) || <Placeholder width="150" />}</h2>
-      <div className="desc">
-        {(repoObj && repoObj.desc) || <Placeholder width="350" />}
-      </div>
+    <div className="repo__card " onClick={handleClick}>
+      <h2 className="repo__name">
+        <span>{name}</span>
+      </h2>
+      <div className="desc">{desc}</div>
       <div className="section-footer">
-        {repoObj && repoObj.language ? (
-          <>
-            <img src={codeIcon} alt="code-icon" className="width__1" />
-            <span className="language">{repoObj.language}</span>
-            {repoObj.homePage ? (
-              <strong className="prototype" onClick={handlePrototypeClick}>
-                Prototype
-              </strong>
-            ) : (
-              ""
-            )}
-          </>
-        ) : (
-          <Placeholder width="100" />
-        )}
+        <>
+          <img src={codeIcon} alt="code-icon" className="width__1" />
+          <span className="language">{language}</span>
+          {homePage ? (
+            <strong
+              className="prototype global-underline"
+              onClick={handlePrototypeClick}
+            >
+              Prototype
+            </strong>
+          ) : (
+            ""
+          )}
+        </>
       </div>
     </div>
   );
 };
+
+// const changeBackground = (e) => {
+//     console.log("isnide onclick")
+//     const colors = ["#ffe254", "#ffefa0", "#f0e68c", "#ffd07d", "#ffef00", "#eedc82"];
+//     const randomColor = () => colors[Math.floor(Math.random() * colors.length)];
+//     document.documentElement.style.cssText = `
+//         --repo-background-hover: ${randomColor()}
+//     `
+// };
 
 export default Repo;

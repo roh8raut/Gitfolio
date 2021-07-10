@@ -9,37 +9,41 @@ const Portfolio = () => {
   const [repoDetails, setRepoDetails] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    fetch("https://api.github.com/users/roh8raut")
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          throw new Error("Something went wrong");
-        }
-      })
-      .then((datas) => {
-        setUserDetails(datas);
-      })
-      .catch((err) => {
-        setUserDetails(user.default);
-      });
+    const userAndRepoDetails = sessionStorage.getItem("detail");
 
-    fetch("https://api.github.com/users/roh8raut/repos")
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          throw new Error("Something went wrong");
-        }
-      })
-      .then((datas) => {
-        setRepoDetails(datas);
+    if (userAndRepoDetails) {
+      const decodeData = JSON.parse(atob(userAndRepoDetails));
+      setUserDetails(decodeData.userDetails);
+      setRepoDetails(decodeData.repoDetails);
+      setIsLoaded(true);
+    } else {
+      (async () => {
+        const data = {};
+        const ud = await fetchUserDetail()
+          .then((datas) => {
+            return datas;
+          })
+          .catch((err) => {
+            return user.default;
+          });
+
+        const rd = await fetchRepos()
+          .then((datas) => {
+            return datas;
+          })
+          .catch((err) => {
+            return repo.default;
+          });
+
+        data.userDetails = ud;
+        data.repoDetails = rd;
+        sessionStorage.setItem("detail", btoa(JSON.stringify(data)));
+
+        setUserDetails(ud);
+        setRepoDetails(rd);
         setIsLoaded(true);
-      })
-      .catch((err) => {
-        setRepoDetails(repo.default);
-        setIsLoaded(true);
-      });
+      })();
+    }
   }, []);
 
   const finalRepoObj = repoDetails.map((repo) => {
@@ -59,6 +63,26 @@ const Portfolio = () => {
       <Repos repoObj={finalRepoObj} isLoaded={isLoaded} />
     </div>
   );
+};
+
+const fetchUserDetail = () => {
+  return fetch("https://api.github.com/users/roh8raut").then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Something went wrong");
+    }
+  });
+};
+
+const fetchRepos = () => {
+  return fetch("https://api.github.com/users/roh8raut/repos").then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Something went wrong");
+    }
+  });
 };
 
 export default Portfolio;

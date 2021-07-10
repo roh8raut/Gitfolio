@@ -1,0 +1,93 @@
+.holder {
+  background-color: grey;
+  height: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
+.position--fixed {
+  position: fixed;
+}
+
+.error {
+  color: red;
+}
+.error-border {
+  border: solid 1px red;
+}
+
+.fade-top {
+  animation: fadeTop 1s ease forwards;
+  animation-delay: calc(var(--order) * 200ms);
+  opacity: 0;
+}
+
+.global-underline {
+  transition: background-size 0.6s ease-out;
+  background: linear-gradient(#00e6cb, #00e6cb) no-repeat left 80%/0 40%;
+}
+
+.global-underline:hover {
+  background-size: 97% 10%;
+}
+
+.bounce-animate {
+  animation: bounce 5s forwards infinite;
+}
+
+.spin-animate {
+  animation: spin 5s linear infinite;
+}
+
+.max-width-1400 {
+  max-width: 1400px;
+}
+.margin-auto {
+  margin: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.shine {
+  background: linear-gradient(
+    to bottom right,
+    #eeeeee 40%,
+    #dddddd 50%,
+    #eeeeee 60%
+  );
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  animation: placeholderShimmer 0.5s infinite linear;
+}
+/* .theme-dark .shine {
+  background: var(--gray-05);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gray-08) 0%,
+    var(--gray-07) 20%,
+    var(--gray-06) 40%,
+    var(--gray-05) 100%
+  );
+} */
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 100% 100%; /*OR bottom right*/
+  }
+
+  100% {
+    background-position: 0 0; /*OR top left*/
+  }
+}

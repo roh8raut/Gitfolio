@@ -1,10 +1,13 @@
 .response {
   display: flex;
-  color: white;
+  color: var(--gray-00);
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100vh;
+}
+.theme-dark .response {
+  color: var(--gray-11);
 }
 
 .contact-form {
@@ -34,12 +37,12 @@
 }
 
 .contact-form input,
-textarea {
+.contact-form textarea {
   color: black;
 }
 
 .theme-dark .contact-form input,
-textarea {
+.theme-dark .contact-form textarea {
   color: var(--light-text);
 }
 

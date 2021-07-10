@@ -105,9 +105,11 @@ const Landingpage = () => {
                     <p style={{ "--order": 5 }}> and I love building </p>
                     <p style={{ "--order": 7 }}>beautiful websites</p> */}
           <h2 ref={headingTextRef}>
-            <div className="global-underline">Hey,I am Rohit Raut </div>
-            <div className="global-underline">and I love building</div>
-            <div className="global-underline">beautiful websites</div>
+            <div className="global-underline">Hey! I'm Rohit Raut👋</div>
+            <div className="global-underline">I'm a web developer</div>
+            <div className="global-underline">
+              with passion for <span style={{ color: "#7777f9" }}>UI/UX</span>
+            </div>
           </h2>
         </div>
         {/* <img src={Prof} alt="profile image" /> */}
